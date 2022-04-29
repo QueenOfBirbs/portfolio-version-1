@@ -1,0 +1,332 @@
+/* universal settings */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* body */
+body{
+    background-color: #e1d5c9;
+    color: #E65E05;
+}
+
+/* navigation bar */
+.navbar{
+    background-image: linear-gradient(#dcac3d, #E75805);
+    position: relative;
+    height: 75px;
+    color: white;
+    margin: -10px;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+a.topbar {
+text-decoration: none;
+color: white;
+}
+
+a.topbar:link {
+    text-decoration: none;
+    color: white;
+}
+
+a.topbar:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a.topbar:focus {
+    text-decoration: none;
+    color: white;
+}
+
+a.topbar:hover {
+    text-decoration: none;
+    color: white;
+}
+
+a.topbar:active {
+    text-decoration: none;
+    color: white;
+}
+
+/* list-settings */
+li{
+    display: inline;
+    margin: 10px;
+}
+
+ul{
+    position: absolute;
+    right: 0px;
+    text-decoration: none;
+    font-size: larger;
+}
+
+/* hero-image */
+.hero {
+    height: 350px;
+    width: 97%;
+    background-image: url("./images/Swatch_orange-yellow-ombre-pattern-v70s-retro-vinyl-flooring-scaled.jpg");
+    background-size:contain;
+    border-color: #E75805 #dcac3d;
+    border-style:ridge;
+    border-width: 25px;
+    border-radius: 20px;
+    margin-left: -7px;
+    display: flex;
+}
+
+/* paragraph settings */
+.paragraph{
+    display: flex;
+
+}
+
+.paragraph p{
+    width: 850px;
+    padding: 30px;
+}
+
+/* headings */
+h1{
+    border-color: #E75805 #933803 #F99D55;
+    border-style:double;
+    border-width: 10px;
+    border-radius: 20px;
+    background-color: #e1d5c9;
+    border-style:double ;
+    text-align: left;
+    width: 350px;
+    padding: 20px;
+    display: flex;
+    font-size: xx-large;
+    color: #E75805;
+}
+
+h2{
+    background-color: #dcac3d;
+    border-color: #E75805 #933803 #F99D55;
+    border-style:double;
+    border-width: 10px;
+    border-radius: 20px;
+    z-index: 10;
+    color: white;
+}
+
+.lernantino{
+    top: -25px;
+    left: 0px;
+    position:absolute;
+    font-size: x-large;
+}
+
+.subtitle{
+    right: 60px;
+    top: 340px;
+    position: absolute;
+}
+
+/* work cards */
+.container{
+    position: absolute;
+    background-color: #F99D55;
+    z-index: 10;
+    padding: 2px 16px;
+}
+
+.topcard {
+    align-self: flex-end;
+    height: 500px;
+    width: 1000px;
+    display: flex;
+}
+
+.bottomcard {
+    align-self: flex-end;
+    height: 250px;
+    width: 450px;
+    display:flex;
+    box-sizing: content-box; 
+}
+
+.card {
+    border-color: #E75805 #dcac3d;
+    border-style:ridge;
+    border-width: 25px;
+    border-radius: 20px;
+    float: right;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#led-benefits {
+    height: 250px;
+    width: 450px;
+}
+
+/* card image effects */
+img {
+    filter:grayscale(1);
+    transition: filter .30s ease-in-out;
+}
+
+img:hover {
+    filter:grayscale(0);
+}
+
+/* navigation underline animation */
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #933803;
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #933803;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: center;
+}
+
+/* footer underline animation */
+.hover-underline-animation-2 {
+    display: inline-block;
+    position: relative;
+    color:#933803;
+}
+
+.hover-underline-animation-2:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color:#933803;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.hover-underline-animation-2:hover:after {
+    transform: scaleX(1);
+    transform-origin: center;
+}
+
+/* footer */
+footer{
+    clear: both;
+}
+
+    a.footerlink {  
+    text-decoration: none;
+    color:#E75805;
+    }
+    
+    a.footerlink:link {
+        text-decoration: none;
+        color:#E75805;
+    }
+    
+    a.footerlink:visited {
+        text-decoration: none;
+        color:#E75805;
+    }
+    
+    a.footerlink:focus {
+        text-decoration: none;
+        color:#E75805;
+    }
+    
+    a.footerlink:hover {
+        text-decoration: none;
+        color:#E75805;
+    }
+    
+    a.footerlink:active {
+        text-decoration: none;
+        color:#E75805;
+    }
+
+    /* media queries */
+    @media screen and (max-width: 992px) {
+        .topcard{
+            height: 500px;
+            width: 1000px;
+          }
+
+        .bottomcard{
+            height:250px;
+            width:450px;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: left;
+          }
+    }
+      
+    @media screen and (max-width: 576px) {
+        .lernantino{
+            top:-30px;
+            position:absolute;
+        }
+        li{
+            float: none;
+            width: 100%;
+            text-align:left;
+            top: 50px;
+        }
+
+        .navbar{
+            height: 250px;
+            width: 110%;
+            display: flex;
+        }
+
+        .hero{
+            border-width: 22.5px;
+        }
+
+        body{
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer{
+            float: none;
+            width: 100%;
+            text-align: center;
+            justify-content:center;
+        }
+
+        .topcard{
+            height: 100px;
+            width: 100px;
+        }
+
+        .bottomcard{
+            height: 100px;
+            width: 100px;
+        }
+
+        #led-benefits{
+            height: 100px;
+            width: 100px;
+        }
+    }
